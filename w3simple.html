@@ -1,0 +1,10 @@
+<!-- <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+<script>
+var web3js = new Web3(window.ethereum);
+</script> -->
+<script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js" type="application/javascript"></script>
+<script>
+  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  const signer = provider.getSigner();
+</script>
+
