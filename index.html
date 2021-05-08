@@ -7,7 +7,7 @@
 const sendEthButton = document.querySelector('.sendEthButton');
 
 let accounts = [];
-let web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
+let web3 = new Web3(window.ethereum);
 
 //Sending Ethereum to an address
 sendEthButton.addEventListener('click', () => {
